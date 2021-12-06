@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>one background changer projejctj one</title>
+</head>
+<style>
+    .container{
+        background-color: green;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-content{
+        border: 1px solid gray;
+        font-family: sans-serif;
+        text-transform: capitalize;
+        padding: 10px;
+        cursor: pointer;
+        border-style: groove;
+        background-color: rgb(167, 167, 148);
+    }
+    .container-content p{
+        font-size: 13px;
+        color: white;
+        filter:drop-shadow();
+    }
+    .after-container{
+        background-color: rgb(116, 42, 214);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+<body>
+<div class="container">
+    <div class="container-content">
+        <p>Clicke Me! </p>
+    </div>
+</div>    
+</body>
+<script>
+    let btn=document.querySelector('.container-content');
+    let btn1=document.querySelector('.container');
+    btn.addEventListener('click',function(){
+        if(btn1.classList=='container'){
+        btn1.classList.remove('container');
+        btn1.classList.add('after-container');
+        console.log('ho')
+
+    }
+    else{
+        btn1.classList.add('container');
+        btn1.classList.remove('after-container');
+        console.log('no')
+
+
+    }
+    console.log('he');
+
+    })
+    console.log('heloo')
+  
+
+</script>
+</html>
